@@ -1,12 +1,20 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 import { Todo } from './Components/Todo'
 
 
 const App = () => {
   return  (
     <div className="app">
-      <Todo />
+      <div className="todos">
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+      </div>
     </div>
   )
 }

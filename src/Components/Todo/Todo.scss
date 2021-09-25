@@ -1,6 +1,67 @@
 .todo {
     background-color: rgb(215, 214, 245);
-    width: 360px;
+    min-width: 360px;
     border-radius: 8px;
     padding: 16px;
+
+    &__list {
+        background-color: #6E69A3;
+        color: #F5F5F6;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+}
+
+.header {
+    &__title-button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 100%;
+        padding-block: 8px;
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(158, 167, 218);
+    border-radius: 3px;
+    padding: 4px 8px;
+    align-items: center;
+    margin-block: 4px;
+
+    &__text {
+        margin: 0;
+
+    }
+
+    &__remove-btn {
+        background-color: transparent;
+        font-weight: 700;
+    }
+
+}
+
+.todo-not-found {
+    margin: 0;
 }
